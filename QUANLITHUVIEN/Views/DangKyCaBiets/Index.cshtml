@@ -1,0 +1,46 @@
+﻿@model IEnumerable<QUANLITHUVIEN.Models.DangKyCaBiet>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SoDangKy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayVaoSo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaKho)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoDangKy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayVaoSo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaKho)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaSach }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaSach }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaSach })
+        </td>
+    </tr>
+}
+
+</table>

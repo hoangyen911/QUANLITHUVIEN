@@ -1,0 +1,67 @@
+﻿@model QUANLITHUVIEN.Models.Sach
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sach</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenTacGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTacGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaNhaXB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNhaXB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNhaXB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhaXB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgonNgu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgonNgu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaKho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaKho)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaSach }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

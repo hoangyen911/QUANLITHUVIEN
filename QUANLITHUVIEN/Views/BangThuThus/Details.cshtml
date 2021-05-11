@@ -1,0 +1,35 @@
+﻿@model QUANLITHUVIEN.Models.BangThuThu
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BangThuThu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenThuThu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenThuThu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaThuThu }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

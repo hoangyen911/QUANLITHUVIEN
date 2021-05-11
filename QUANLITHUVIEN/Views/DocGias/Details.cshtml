@@ -1,0 +1,67 @@
+﻿@model QUANLITHUVIEN.Models.DocGia
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DocGia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GioiTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoOHienTai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoOHienTai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCapThe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCapThe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HanDungThe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HanDungThe)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SoThe }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
