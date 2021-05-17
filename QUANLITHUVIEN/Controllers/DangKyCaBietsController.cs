@@ -13,7 +13,7 @@ namespace QUANLITHUVIEN.Controllers
     public class DangKyCaBietsController : Controller
     {
         private QUANLITHUVIENDbContext db = new QUANLITHUVIENDbContext();
-
+        [Authorize]
         // GET: DangKyCaBiets
         public ActionResult Index()
         {

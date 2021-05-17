@@ -18,6 +18,7 @@ namespace QUANLITHUVIEN.Models
         public virtual DbSet<MuonTra> MuonTras { get; set; }
         public virtual DbSet<NhaXB> NhaXBs { get; set; }
         public virtual DbSet<Sach> Sachs { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
